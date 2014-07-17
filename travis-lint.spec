@@ -5,7 +5,7 @@
 Summary:	Checks your .travis.yml for possible issues, deprecations and so on
 Name:		travis-lint
 Version:	1.7.0
-Release:	1
+Release:	2
 License:	GPL v2+ or Ruby
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{name}-%{version}.gem
