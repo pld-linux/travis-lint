@@ -4,13 +4,13 @@
 
 Summary:	Checks your .travis.yml for possible issues, deprecations and so on
 Name:		travis-lint
-Version:	1.7.0
-Release:	2
+Version:	1.8.0
+Release:	1
 License:	GPL v2+ or Ruby
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{name}-%{version}.gem
-# Source0-md5:	5b6d3e49c95c7f62955ee1e2d5d076be
-URL:		http://github.com/travis-ci
+# Source0-md5:	c4a1e80786570ac94b10662275367701
+URL:		https://github.com/travis-ci/travis-lint
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
 BuildRequires:	sed >= 4.0
@@ -20,6 +20,8 @@ BuildRequires:	ruby-rspec >= 2.8
 %endif
 Requires:	ruby-hashr < 0.1
 Requires:	ruby-hashr >= 0.0.22
+Requires:	ruby-safe_yaml < 0.10
+Requires:	ruby-safe_yaml >= 0.9.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
